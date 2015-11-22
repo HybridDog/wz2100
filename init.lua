@@ -13,9 +13,9 @@ if minetest.setting_getbool("creative_mode") then
 			full_punch_interval = 1.0,
 			max_drop_level=0,
 			groupcaps={
-				fleshy={times={[2]=0.80, [3]=0.40}, maxwear=0.05, maxlevel=1},
-				snappy={times={[2]=0.80, [3]=0.40}, maxwear=0.05, maxlevel=1},
-				choppy={times={[3]=0.90}, maxwear=0.05, maxlevel=0}
+				fleshy={times={[2]=0.80, [3]=0.40}, uses=20, maxlevel=1},
+				snappy={times={[2]=0.80, [3]=0.40}, uses=20, maxlevel=1},
+				choppy={times={[3]=0.90}, uses=20, maxlevel=0}
 			}
 		},
 		on_use = function(_, user, pointed_thing)
