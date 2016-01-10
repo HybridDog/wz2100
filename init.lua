@@ -217,4 +217,4 @@ end)
 
 
 
-print(string.format("[wz2100] loaded after ca. %.2fs", os.clock() - load_time_start))
+minetest.log("info", string.format("[wz2100] loaded after ca. %.2fs", os.clock() - load_time_start))
